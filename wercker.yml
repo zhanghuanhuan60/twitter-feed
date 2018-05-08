@@ -13,7 +13,7 @@ build:
         name: maven build
         code: mvn clean assembly:assembly
 #Push the docker image with our built and tested application to Docker Hub
-az:
+AZ:
   steps:
     - internal/docker-push:
         username: $DOCKER_USERNAME
